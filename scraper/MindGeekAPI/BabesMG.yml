@@ -1,0 +1,36 @@
+name: "Babes Network via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - babesnetwork.com/video
+      - babes.com/video 
+      - babesunleashed.com/video
+      - blackisbetter.com/video
+      - elegantanal.com/video
+      - officeobsession.com/video
+      - stepmomlessons.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - babesnetwork
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - babesnetwork
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - babesnetwork
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - babesnetwork
+# Last Updated August 13, 2022

@@ -1,0 +1,84 @@
+name: "RealityKings Network via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - realitykings.com/video	
+      - 40inchplus.com/video
+      - 8thstreetlatinas.com/video
+      - badtowtruck.com/video
+      - bignaturals.com/video
+      - bigtitsboss.com/video
+      - bikinicrashers.com/video
+      - blackgfs.com/video
+      - captainstabbin.com/video
+      - cfnmsecret.com/video
+      - crazyasiangfs.com/video
+      - crazycollegegfs.com/video
+      - cumfiesta.com/video
+      - cumgirls.com/video
+      - dangerousdongs.com/video
+      - daredorm.com/video
+      - eurosexparties.com/video
+      - extremeasses.com/video
+      - extremenaturals.com/video
+      - firsttimeauditions.com/video
+      - flowertucci.com/video
+      - gfrevenge.com/video
+      - girlsofnaked.com/video
+      - happytugs.com/video
+      - hdlove.com/video
+      - hornybirds.com/video
+      - hotbush.com/video
+      - inthevip.com/video
+      - lilhumpers.com/video
+      - mikeinbrazil.com/video
+      - mikesapartment.com/video
+      - milfhunter.com/video
+      - milfnextdoor.com/video
+      - momsbangteens.com/video
+      - momslickteens.com/video
+      - moneytalks.com/video
+      - monstercurves.com/video
+      - nofaces.com/video
+      - pure18.com/video
+      - realorgasms.com/video
+      - recklessinmiami.com/video
+      - rk.com/video
+      - rkprime.com/video
+      - roundandbrown.com/video
+      - saturdaynightlatinas.com/video
+      - seemywife.com/video
+      - sneakysex.com/video
+      - streetblowjobs.com/video
+      - teamsquirt.com/video
+      - teenslovehugecocks.com/video
+      - topshelfpussy.com/video
+      - trannysurprise.com/video
+      - vipcrew.com/video
+      - welivetogether.com/video
+      - wivesinpantyhose.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - realitykings
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - realitykings
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - realitykings
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - realitykings
+# Last Updated August 13, 2022

@@ -1,0 +1,30 @@
+name: "Sean Cody via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - seancody.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - seancody
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - seancody
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - seancody
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - seancody
+# Last Updated August 13, 2022

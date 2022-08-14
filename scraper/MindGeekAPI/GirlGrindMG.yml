@@ -1,0 +1,30 @@
+name: "GirlGrind via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - girlgrind.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - girlgrind
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - girlgrind
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - girlgrind
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - girlgrind
+# Last Updated August 13, 2022

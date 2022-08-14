@@ -1,0 +1,33 @@
+name: "BigStr Network via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - bigstr.com/video
+      - czechhunter.com/video
+      - debtdandy.com/video
+      - dirtyscout.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - bigstr
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - bigstr
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - bigstr
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - bigstr
+# Last Updated August 13, 2022

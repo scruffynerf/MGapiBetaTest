@@ -1,0 +1,30 @@
+name: "WhyNotBi via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - whynotbi.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - whynotbi
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - whynotbi
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - whynotbi
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - whynotbi
+# Last Updated August 13, 2022

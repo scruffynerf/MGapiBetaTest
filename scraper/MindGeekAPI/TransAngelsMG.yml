@@ -1,0 +1,31 @@
+name: "TransAngels via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - transangels.com/video
+      - transangelsnetwork.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - transangels
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - transangels
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - transangels
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - transangels
+# Last Updated August 13, 2022

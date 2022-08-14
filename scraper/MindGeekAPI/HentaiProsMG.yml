@@ -1,0 +1,31 @@
+name: "HentaiPros via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - hentaipros.com/video
+      - hentaiprosnetwork.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - hentaipros
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - hentaipros
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - hentaipros
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - hentaipros
+# Last Updated August 13, 2022

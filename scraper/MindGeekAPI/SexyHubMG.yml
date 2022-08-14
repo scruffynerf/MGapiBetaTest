@@ -1,0 +1,36 @@
+name: "SexyHub via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - sexyhub.com/video
+      - danejones.com/video
+      - fitnessrooms.com/video
+      - girlfriends.xxx/video
+      - lesbea.com/video
+      - massagerooms.com/video
+      - momxxx.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - sexyhub
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - sexyhub
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - sexyhub
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - sexyhub
+# Last Updated August 13, 2022

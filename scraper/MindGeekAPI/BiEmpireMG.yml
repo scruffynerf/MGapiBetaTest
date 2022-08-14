@@ -1,0 +1,30 @@
+name: "Bi Empire via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - biempire.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - biempire
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - biempire
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - biempire
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - biempire
+# Last Updated August 13, 2022

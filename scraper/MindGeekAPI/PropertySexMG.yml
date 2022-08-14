@@ -1,0 +1,30 @@
+name: "PropertySex via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - propertysex.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - propertysex
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - propertysex
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - propertysex
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - propertysex
+# Last Updated August 13, 2022

@@ -1,0 +1,30 @@
+name: "DeviantHardcore via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - devianthardcore.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - devianthardcore
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - devianthardcore
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - devianthardcore
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - devianthardcore
+# Last Updated August 13, 2022

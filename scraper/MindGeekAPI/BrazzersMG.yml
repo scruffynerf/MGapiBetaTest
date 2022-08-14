@@ -1,0 +1,61 @@
+name: "Brazzers Network via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - brazzersnetwork.com/video
+      - brazzers.com/video
+      - assesinpublic.com/video
+      - babygotboobs.com/video
+      - bigbuttslikeitbig.com/video
+      - bigtitsatschool.com/video
+      - bigtitsatwork.com/video
+      - bigtitsinsports.com/video
+      - bigtitsinuniform.com/video
+      - bigwetbutts.com/video
+      - brazzersexxtra.com/video
+      - brazzersvault.com/video
+      - bustyandreal.com/video
+      - bustyz.com/video
+      - buttsandblacks.com/video
+      - cfnmclothedfemalemalenude.com/video
+      - daywithapornstar.com/video
+      - dirtymasseur.com/video
+      - doctoradventures.com/video
+      - hotandmean.com/video
+      - hotchicksbigasses.com/video
+      - jugfuckers.com/video
+      - milfslikeitbig.com/video
+      - mommygotboobs.com/video
+      - momsincontrol.com/video
+      - pornstarslikeitbig.com/video
+      - racksandblacks.com/video
+      - realwifestories.com/video
+      - shesgonnasquirt.com/video
+      - teenslikeitbig.com/video
+      - teenslikeitblack.com/video
+      - zzseries.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - brazzersnetwork.com
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - brazzersnetwork.com
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - brazzersnetwork.com
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - brazzersnetwork.com
+# Last Updated August 13, 2022

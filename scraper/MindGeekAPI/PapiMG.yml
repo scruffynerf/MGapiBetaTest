@@ -1,0 +1,30 @@
+name: "Papi via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - papi.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - papi
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - papi
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - papi
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - papi
+# Last Updated August 13, 2022

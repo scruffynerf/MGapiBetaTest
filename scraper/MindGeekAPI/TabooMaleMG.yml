@@ -1,0 +1,30 @@
+name: "TabooMale via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - taboomale.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - taboomale
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - taboomale
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - taboomale
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - taboomale
+# Last Updated August 13, 2022

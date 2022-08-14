@@ -1,0 +1,30 @@
+name: "MetroHD via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - metrohd.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - metrohd
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - metrohd
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - metrohd
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - metrohd
+# Last Updated August 13, 2022

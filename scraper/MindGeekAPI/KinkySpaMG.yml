@@ -1,0 +1,30 @@
+name: "KinkySpa via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - kinkyspa.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - kinkyspa
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - kinkyspa
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - kinkyspa
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - kinkyspa
+# Last Updated August 13, 2022

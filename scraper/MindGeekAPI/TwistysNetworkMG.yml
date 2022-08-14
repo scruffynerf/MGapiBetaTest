@@ -1,0 +1,38 @@
+name: "Twistys Network via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - twistysnetwork.com/video
+      - twistys.com/video
+      - anettedawn.com/video
+      - momknowsbest.com/video
+      - nicolegraves.com/video
+      - turningtwistys.com/video
+      - twistyshard.com/video
+      - twistysteasers.com/video
+      - whengirlsplay.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - twistysnetwork
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - twistysnetwork
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - twistysnetwork
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - twistysnetwork
+# Last Updated August 13, 2022

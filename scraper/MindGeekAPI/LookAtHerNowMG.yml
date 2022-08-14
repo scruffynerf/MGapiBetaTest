@@ -1,0 +1,30 @@
+name: "LookAtHerNow via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - lookathernow.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - lookathernow
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - lookathernow
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - lookathernow
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - lookathernow
+# Last Updated August 13, 2022

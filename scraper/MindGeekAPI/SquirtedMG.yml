@@ -1,0 +1,30 @@
+name: "Squirted via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - squirted.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - squirted
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - squirted
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - squirted
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - squirted
+# Last Updated August 13, 2022

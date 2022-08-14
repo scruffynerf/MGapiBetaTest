@@ -1,0 +1,30 @@
+name: "Bromo via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - bromo.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - bromo
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - bromo
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - bromo
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - bromo
+# Last Updated August 13, 2022

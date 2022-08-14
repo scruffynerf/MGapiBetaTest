@@ -1,0 +1,30 @@
+name: "IconMale via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - iconmale.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - iconmale
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - iconmale
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - iconmale
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - iconmale
+# Last Updated August 13, 2022

@@ -1,0 +1,20 @@
+name: "MindGeekAPI 2.0"
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+
+# Last Updated August 03, 2022

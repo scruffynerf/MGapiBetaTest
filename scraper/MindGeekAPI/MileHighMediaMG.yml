@@ -1,0 +1,36 @@
+name: "milehighmedia via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - milehighmedia.com/video
+      - milehigh.com/video
+      - doghousedigital.com/video
+      - familysinners.com/video
+      - realityjunkies.com/video
+      - sweetheartvideo.com/video
+      - sweetsinner.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - milehighmedia
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - milehighmedia
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - milehighmedia
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - milehighmedia
+# Last Updated August 13, 2022

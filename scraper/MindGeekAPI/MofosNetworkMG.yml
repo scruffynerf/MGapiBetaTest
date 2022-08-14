@@ -1,0 +1,53 @@
+name: "Mofos Network via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - mofosnetwork.com/video
+      - mofos.com/video
+      - bustedbabysitters.com/video
+      - dontbreakme.com/video
+      - dronehunter.com/video
+      - ebonysextapes.com/video
+      - girlsgonepink.com/video
+      - iknowthatgirl.com/video
+      - ingangwebang.com/video
+      - latinasextapes.com/video
+      - letstryanal.com/video
+      - milfslikeitblack.com/video
+      - mofosbsides.com/video
+      - mofoslab.com/video
+      - mofosworldwide.com/video
+      - pervsonpatrol.com/video
+      - pornstarvote.com/video
+      - projectrv.com/video
+      - publicpickups.com/video
+      - realslutparty.com/video
+      - sharemybf.com/video
+      - shesafreak.com/video
+      - strandedteens.com/video
+      - thesexscout.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - mofosnetwork
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - mofosnetwork
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - mofosnetwork
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - mofosnetwork
+# Last Updated August 13, 2022

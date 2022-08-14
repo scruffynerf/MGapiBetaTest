@@ -1,0 +1,31 @@
+name: "DigitalPlayground via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - digitalplayground.com/video
+      - digitalplaygroundnetwork.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - digitalplayground
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - digitalplayground
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - digitalplayground
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - digitalplayground
+# Last Updated August 13, 2022

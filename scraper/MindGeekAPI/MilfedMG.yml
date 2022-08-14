@@ -1,0 +1,30 @@
+name: "Milfed via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - milfed.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - milfed
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - milfed
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - milfed
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - milfed
+# Last Updated August 13, 2022

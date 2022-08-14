@@ -1,0 +1,22 @@
+name: Marker Maker
+description: Makes Markers from pre-saved info on Scene Update
+version: 0.1
+url: https://github.com/scruffynerf/MarkerMaker
+exec:
+  - python
+  - "{pluginDir}/make_marker.py"
+interface: raw
+hooks:
+  - name: Add Marker to Scene
+    description: Makes Markers from pre-saved info for scenes
+    triggeredBy:
+      - Scene.Update.Post
+tasks:
+  - name: 'Disable'
+    description: Disable the hook, stop making markers
+    defaultArgs:
+      mode: disable
+  - name: 'Enable'
+    description: Enable the hook, begin making markers
+    defaultArgs:
+      mode: enable

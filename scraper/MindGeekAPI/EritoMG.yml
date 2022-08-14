@@ -1,0 +1,30 @@
+name: "Erito via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - erito.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - erito
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - erito
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - erito
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - erito
+# Last Updated August 13, 2022

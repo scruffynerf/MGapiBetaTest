@@ -1,0 +1,30 @@
+name: "SheWillCheat via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - shewillcheat.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - shewillcheat
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - shewillcheat
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - shewillcheat
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - shewillcheat
+# Last Updated August 13, 2022

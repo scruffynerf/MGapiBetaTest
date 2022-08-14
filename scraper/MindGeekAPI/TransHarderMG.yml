@@ -1,0 +1,30 @@
+name: "TransHarder via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - transharder.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - transharder
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - transharder
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - transharder
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - transharder
+# Last Updated August 13, 2022

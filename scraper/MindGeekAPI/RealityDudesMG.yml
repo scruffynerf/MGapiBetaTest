@@ -1,0 +1,33 @@
+name: "RealityDudes Network via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - realitydudesnetwork.com/video
+      - dickdorm.com/video
+      - realitydudes.com/video
+      - str8chaser.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - realitydudesnetwork
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - realitydudesnetwork
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - realitydudesnetwork
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - realitydudesnetwork
+# Last Updated August 13, 2022

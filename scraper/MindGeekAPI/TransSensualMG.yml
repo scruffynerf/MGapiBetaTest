@@ -1,0 +1,30 @@
+name: "TransSensual via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - transsensual.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - transsensual
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - transsensual
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - transsensual
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - transsensual
+# Last Updated August 13, 2022

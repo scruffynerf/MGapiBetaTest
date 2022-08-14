@@ -1,0 +1,41 @@
+name: "Fakehub via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - fakehub.com/video
+      - fakeagent.com/video
+      - fakeagentuk.com/video
+      - fakecop.com/video
+      - fakedrivingschool.com/video
+      - fakehospital.com/video
+      - fakehostel.com/video
+      - fakehuboriginals.com/video
+      - faketaxi.com/video
+      - femaleagent.com/video
+      - femalefaketaxi.com/video
+      - publicagent.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - fakehub
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - fakehub
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - fakehub
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - fakehub
+# Last Updated August 13, 2022

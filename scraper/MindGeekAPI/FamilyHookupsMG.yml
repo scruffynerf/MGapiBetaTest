@@ -1,0 +1,30 @@
+name: "FamilyHookups via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - familyhookups.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - familyhookups
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - familyhookups
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - familyhookups
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - familyhookups
+# Last Updated August 13, 2022

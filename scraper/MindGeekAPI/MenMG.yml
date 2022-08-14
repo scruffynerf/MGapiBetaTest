@@ -1,0 +1,38 @@
+name: "Men.com via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - men.com/video
+      - bigdicksatschool.com/video
+      - drillmyhole.com/video
+      - godsofmen.com/video
+      - jizzorgy.com/video
+      - menofuk.com/video
+      - str8togay.com/video
+      - thegayoffice.com/video
+      - toptobottom.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - men
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - men
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - men
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - men
+# Last Updated August 13, 2022

@@ -1,0 +1,30 @@
+name: "TrueAmateurs via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - trueamateurs.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - trueamateurs
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - trueamateurs
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - trueamateurs
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - trueamateurs
+# Last Updated August 13, 2022

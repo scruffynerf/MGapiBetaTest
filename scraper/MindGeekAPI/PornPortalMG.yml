@@ -1,0 +1,31 @@
+name: "PornPortal via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - pornportal.com/video
+      - pornportalnetwork.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - pornportal
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - pornportal
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - pornportal
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - pornportal
+# Last Updated August 13, 2022

@@ -1,0 +1,30 @@
+name: "Tube8VIP via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - tube8vip.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - tube8vip
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - tube8vip
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - tube8vip
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - tube8vip
+# Last Updated August 13, 2022

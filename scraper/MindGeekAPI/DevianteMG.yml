@@ -1,0 +1,35 @@
+name: "Deviante Network via MGapi"
+sceneByURL:
+  - action: script
+    url:
+      - deviante.com/video
+      - eroticspice.com/video
+      - forgivemefather.com/video
+      - loveherass.com/video
+      - prettydirtyteens.com/video
+      - sexworking.com/video
+    script:
+      - python
+      - MindGeekAPI.py
+      - deviante
+sceneByFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - deviante
+sceneByName:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - searchName
+      - deviante
+sceneByQueryFragment:
+    action: script
+    script:
+      - python
+      - MindGeekAPI.py
+      - validName
+      - deviante
+# Last Updated August 13, 2022
