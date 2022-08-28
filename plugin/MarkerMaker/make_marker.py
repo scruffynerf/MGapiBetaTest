@@ -1,7 +1,8 @@
 import os
 import sys
 import json
-
+import re
+import requests
 try:
     import stashapi.log as log
     import stashapi.marker_parse as mp
@@ -106,11 +107,11 @@ def marker_load_file(scene):
         scene_id = scene["id"]
         file_path = os.path.join(config.MARKER_PATH,"scene" + str(scene_id) + "_markers.json")
         if not os.path.exists(file_path):
-            #mg_id = something
+            mg_id = ""
             file_path = os.path.join(config.MARKER_PATH,"id" + str(mg_id) + "_markers.json")
             if not os.path.exists(file_path):
                 log.error("Can't find file to load")
-                sys.exit()
+                return []
     log.info(f"Reading marker file: ({file_path})")
     with open(file_path, 'r') as markerfile:
         marker_json = markerfile.read()
@@ -176,6 +177,48 @@ def marker_save():
     #            else:
     #                       log.info("The duration of this scene doesn't match the duration of stash scene closely enough.")
                                        
+def slrMarkers(json_input):
+    markers = []
+    url=json_input['args']['hookContext']['input']['url']
+    if url is not None:
+        if 'www.sexlikereal.com' in url:
+            id = re.findall(r'\d+', url)[-1]
+            log.debug("Fetching from slr api for scene id: "+id)
+            response=requests.get('https://api.sexlikereal.com/virtualreality/video/id/' + id)
+            r=response.json()
+            for t in r['timeStamps']:
+                print("timestamp: " + str(t['ts']) + ", name: " + t['name'])
+                marker = {}
+                marker["seconds"] = t['ts']
+                marker["primary_tag"] = t['name']
+                marker["tags"] = []
+                marker["title"] = t['name']
+                markers.append(marker)
+                log.debug("new marker: "+str(marker))
+    return markers
+
+def descriptionMarkers(json_input):
+    markers=[]
+    details=json_input['args']['hookContext']['input']['details']
+    for f in re.finditer('\d{1,2}:\d{1,2}',details,re.MULTILINE):
+        log.debug("found timestamp string: "+f.group())
+        marker={}
+        marker['primary_tag']="timestamp"
+        marker['tags']=[]
+        time=f.group()
+        if time[1] ==':':
+            marker['seconds']=int(time[:1])*60+int(time[3:])
+        elif time[2]==':':
+            marker['seconds']=int(time[:2])*60+int(time[4:])
+        r=re.search('\.',details[f.end():])
+        if r is not None:
+            marker['title']=details[f.end():r.span()[1]]
+        else:
+            marker['title']=details[f.end():]
+        markers.append(marker)
+        log.debug("new marker: "+str(marker))
+    return markers
+
 
 def main():
     global stash
@@ -219,6 +262,13 @@ def main():
     current_markers = scene.get("scene_markers")
     log.debug(current_markers)
     markers = marker_load_file(scene)
+    if len(current_markers)==0:
+        if json_input['args']['hookContext']['input'] is not None:
+            markers=slrMarkers(json_input)
+            markers.extend(descriptionMarkers(json_input))
+    else:
+        log.info("skipping adding markers, there are already some on the scene")
+    markers.extend(marker_load_file(scene))
     #log.debug(markers)
     #markers.sort(key=lambda x: x["endTime"], reverse=True)
     #log.debug(markers)
