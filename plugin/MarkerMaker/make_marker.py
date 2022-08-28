@@ -36,7 +36,7 @@ def configfile_edit(configfile, name: str, state: str):
         for line in config_lines:
             if name == line.split("=")[0].strip():
                 file_w.write(f"{name} = {state}\n")
-                found += 1                
+                found += 1
             elif "#" + name == line.split("=")[0].strip():
                 file_w.write(f"{name} = {state}\n")
                 found += 1
@@ -107,7 +107,7 @@ def marker_load_file(scene):
         scene_id = scene["id"]
         file_path = os.path.join(config.MARKER_PATH,"scene" + str(scene_id) + "_markers.json")
         if not os.path.exists(file_path):
-            mg_id = ""
+            mg_id = re.search("\d+", scene['url']).group()
             file_path = os.path.join(config.MARKER_PATH,"id" + str(mg_id) + "_markers.json")
             if not os.path.exists(file_path):
                 log.error("Can't find file to load")
